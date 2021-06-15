@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>SampleLibrary</name>
+  </assembly>
+  <members>
+    <member name="T:SampleLibrary.ArrayConverter">
+      <summary>
+        <para xml:lang="ja">配列を異なる型の配列に変換します。</para>
+      </summary>
+    </member>
+    <member name="M:SampleLibrary.ArrayConverter.ToByteArray(System.Single[])">
+      <summary>
+        <para xml:lang="ja">float[] を byte[] に変換します。</para>
+      </summary>
+      <param name="source">
+        <para xml:lang="ja">float 配列。</para>
+      </param>
+      <returns>
+        <para xml:lang="ja">新しい byte 配列。</para>
+      </returns>
+    </member>
+  </members>
+</doc>

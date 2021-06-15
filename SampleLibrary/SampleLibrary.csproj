@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>SampleLibrary.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="powershell -ExecutionPolicy RemoteSigned -File &quot;$(ProjectDir)separateDocs.ps1&quot; $(ProjectName) $(OutDir) $(ProjectDir)Generated" />
+  </Target>
+
+  <ItemGroup>
+    <Content Include="Generated\*\*.xml" Pack="true" PackagePath="lib\$(TargetFramework)" />
+  </ItemGroup>
+
+</Project>

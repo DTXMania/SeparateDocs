@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>SampleLibrary</name>
+  </assembly>
+  <members>
+    <member name="T:SampleLibrary.ArrayConverter">
+      <summary>
+        <para xml:lang="en">Converts an array to an array of a different type.</para>
+      </summary>
+    </member>
+    <member name="M:SampleLibrary.ArrayConverter.ToByteArray(System.Single[])">
+      <summary>
+        <para xml:lang="en">Converts float[] to byte[].</para>
+      </summary>
+      <param name="source">
+        <para xml:lang="en">An array of floats.</para>
+      </param>
+      <returns>
+        <para xml:lang="en">A new array of bytes.</para>
+      </returns>
+    </member>
+  </members>
+</doc>
